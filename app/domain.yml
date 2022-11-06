@@ -1,0 +1,34 @@
+version: '3.1'
+
+intents:
+  - greet
+  - apply_new_connection
+  - documents_req
+  - charges
+  - extend_connection
+  - bye
+  - garbage
+  - more_assistance
+
+responses:
+   utter_greet:
+       - text: "Hello! I am Shubham from Electricity Board Customer Service, Rajasthan. I am here to assist you regarding queries with temporary electricity connection. How can I help you?"
+       - text: "Hi! I am Shubham from Electricity Board Customer Service, Rajasthan. I am here to assist you regarding queries with temporary electricity connection. How can I help you?"
+   utter_apply_new_connection:
+       - text: "To register a new connection request, you may use following options. You can type “TPDDL NEW” and send to 56161 OR Visit nearest District Consumer Care Centre."
+   utter_documents_req:
+       - text: "The documents required for a new temporary electricity connection are: A request form, Identity Proof of registered consumer and copy of last paid bill. In addition to the above documents, Guarantor's Bill is also required."
+   utter_charges:
+       - text: "For a new temporary electricity connection, you have to submit a one-time fees of Rs 2000. In addition, you have to submit a deposit of Rs 10000, which will be refunded to you at the expiry of temporary connection period."
+   utter_extend_connection:
+       - text: "Short Term Temporary connection can not be extended. Incase you want a new temporary connection, you can either visit https://energy.rajasthan.gov.in/content/raj/energy-department/en/help.html or type “TPDDL NEW” and send to 56161 or Visit nearest District Consumer Care Centre."
+   utter_bye:
+       - text: "Thank you for contacting us. Have a great day ahead!"
+   utter_garbage:
+       - text: "I am sorry I wont be able to assist you on this. You can call 181 to connect with the right agent."
+   utter_more_assistance:
+       - text: "Is there anything else I can help you with?"
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
