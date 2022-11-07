@@ -1,0 +1,51 @@
+version: "2.0"
+
+stories:
+
+- story: greet and apply
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: apply_new_connection
+  - action: utter_apply_new_connection
+  - action: utter_more_assistance
+
+- story: greet and documents
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: documents_req
+  - action: utter_documents_req
+  - action: utter_more_assistance
+
+- story: greet and charges
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: charges
+  - action: utter_charges
+  - action: utter_more_assistance
+
+- story: greet and extend
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: extend_connection
+  - action: utter_extend_connection
+  - action: utter_more_assistance
+
+- story: greet and bye
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: bye
+  - action: utter_bye
+
+- story: greet and garbage
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: garbage
+  - action: utter_garbage
+  - action: utter_more_assistance
+

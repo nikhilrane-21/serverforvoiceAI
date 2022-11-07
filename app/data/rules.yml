@@ -1,0 +1,8 @@
+version: "2.0"
+
+rules:
+- rule: garbage
+  steps:
+  - intent: garbage
+  - action: utter_garbage
+  - action: utter_more_assistance
